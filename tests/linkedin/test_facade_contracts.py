@@ -66,6 +66,7 @@ TOOL_DELEGATES = {
     "search_jobs": "search_jobs",
     "search_people": "search_people",
     "search_posts": "search_posts",
+    "get_post_comments": "extract_page",
     "send_message": "send_message",
     "reply_to_conversation": "reply_to_conversation",
 }

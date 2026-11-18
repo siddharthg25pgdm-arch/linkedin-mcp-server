@@ -311,6 +311,7 @@ _A_VALID_CALL = [
     ),
     ("feed", "get_feed", {}),
     ("post", "search_posts", {"keywords": "python"}),
+    ("post", "get_post_comments", {"post": "7528682246627672064"}),
 ]
 
 

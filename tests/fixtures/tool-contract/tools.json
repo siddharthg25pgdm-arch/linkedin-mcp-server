@@ -614,6 +614,46 @@
     "_meta": {
       "fastmcp": {
         "tags": [
+          "post"
+        ]
+      }
+    },
+    "annotations": {
+      "openWorldHint": true,
+      "readOnlyHint": true
+    },
+    "description": "Read one LinkedIn post and the comments LinkedIn loads under it.\n\nUse when a hiring post hides its apply route in the comments (\"link in\ncomments\", \"JD below\", \"comment 'interested'\") or gives no route at all.\nRead-only: opens the post permalink, scrolls to load comments, and\nreturns the raw text. It does not expand every \"Load more comments\"\nor reply thread, so very long threads may be partial.",
+    "inputSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "max_scrolls": {
+          "default": 3,
+          "description": "How far to scroll to load comments (1-10, default 3).",
+          "maximum": 10,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "post": {
+          "description": "Post permalink (/posts/<slug> or\n/feed/update/urn:li:activity:<id>, full or relative) or a bare\nactivity id.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "post"
+      ],
+      "type": "object"
+    },
+    "name": "get_post_comments",
+    "outputSchema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "title": "Get Post Comments"
+  },
+  {
+    "_meta": {
+      "fastmcp": {
+        "tags": [
           "job"
         ]
       }

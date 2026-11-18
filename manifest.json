@@ -141,6 +141,10 @@
       "description": "Search LinkedIn posts/content globally by keyword (the 'Posts' tab) with an optional recency filter (past-24h/past-week/past-month) and content-type filter (e.g. documents); returns unordered candidate permalinks in references"
     },
     {
+      "name": "get_post_comments",
+      "description": "Read one LinkedIn post by permalink or activity id plus the comments loaded under it (read-only), e.g. to find an apply link or email left in the comments"
+    },
+    {
       "name": "get_session_status",
       "description": "Diagnose saved-session files and the serving process's browser state without opening a browser or contacting LinkedIn"
     },
